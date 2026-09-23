@@ -1,0 +1,20 @@
+# Build output
+.build/
+DerivedData/
+build/
+
+# Xcode user state — window layout, breakpoints, per-user scheme settings.
+# The shared scheme in xcshareddata/ is committed; this is the personal noise.
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+# macOS
+.DS_Store
+
+# Never commit a journal or a backup, on the off-chance one is ever
+# created or copied inside the project directory.
+*.journalbackup
+vault.json
+*.enc
