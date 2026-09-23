@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- App Sandbox on. -->
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+
+	<!-- NO network entitlements. Deliberately absent, do not add:
+	       com.apple.security.network.client
+	       com.apple.security.network.server
+	     Under the sandbox, their absence means the kernel refuses outbound
+	     connections even if some code tried to make one. -->
+
+	<!-- User-selected read/write: needed only for Export, Backup and Restore,
+	     where the user picks a destination folder or file themselves. -->
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+</dict>
+</plist>
